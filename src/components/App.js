@@ -86,12 +86,6 @@ export default function App() {
         data={editformData}
       />
       <AddNoteForm getNotes={getNotes} />
-      <Notes
-        notes={data}
-        filters={filters}
-        getNotes={getNotes}
-        toggleEditForm={toggleEditForm}
-      />
       {data.length ? (
         <Filter
           data={data}
@@ -102,6 +96,12 @@ export default function App() {
       ) : (
         ""
       )}
+      <Notes
+        notes={data}
+        filters={filters}
+        getNotes={getNotes}
+        toggleEditForm={toggleEditForm}
+      />
     </main>
   );
 }

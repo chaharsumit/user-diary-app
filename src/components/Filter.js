@@ -18,7 +18,7 @@ export default function Filter(props) {
   );
 
   return (
-    <div className="filters-container">
+    <div className="filters-container mt-2 mb-2">
       <h3 className="text-md text-primary">Filters</h3>
       <select onChange={props.handleFilter} name="month" id="month">
         <option value="" selected>
