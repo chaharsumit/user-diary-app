@@ -21,8 +21,8 @@ export default function AddNoteForm(props) {
 
   function createNotes(event) {
     event.preventDefault();
-    if(!heading || !description || !date){
-      return alert('fill all fields before submitting');
+    if (!heading || !description || !date) {
+      return alert("fill all fields before submitting");
     }
     fetch(ROOT_URL, {
       method: "POST",
@@ -39,7 +39,7 @@ export default function AddNoteForm(props) {
     }).then(() => {
       clearForm();
       props.getNotes();
-      alert('note added successfully');
+      alert("note added successfully");
     });
   }
 
@@ -78,7 +78,9 @@ export default function AddNoteForm(props) {
         />
       </fieldset>
       <fieldset className="flex flex-col-gap-1 justify-self-end">
-        <button className="btn-form" onClick={clearForm}>CANCEL</button>
+        <button className="btn-form" type="button" onClick={clearForm}>
+          CANCEL
+        </button>
         <input className="btn-form bg-orange" type="submit" value="ADD" />
       </fieldset>
     </form>
