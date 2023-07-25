@@ -1,3 +1,3 @@
-const ROOT_URL = 'https://afternoon-ravine-88640.herokuapp.com/notes';
+const ROOT_URL = "https://real-pink-pigeon-garb.cyclic.app/notes";
 
 export { ROOT_URL };
